@@ -104,7 +104,7 @@ class TestVolumeBasicOps(manager.ScenarioTest):
             # create file and assert it was created
             cmd = "sudo touch /vol/test.txt && sudo ls /vol/test.txt"
             status = self.ssh_client.exec_command(cmd)
-            LOG.info("return status from touch and ls command: %s" % status)
+            LOG.info(" XXXXXXXXXXXXXXXXXXXXXXXXXreturn status from touch and ls command: %s" % status)
             self.assertEqual("/vol/test.txt\n", status, "created test.txt")
 
             # reboot instance and wait
